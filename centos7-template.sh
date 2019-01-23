@@ -19,10 +19,10 @@ PACKAGES="vim htop mc"
 YUMLOG=$PWD/${0##*/}.yumlog
 
 # Fancy bracketed notifications
-OK="\e[1m[  \e[92mOK  \e[39m]\t"
-WARN="\e[1m[ \e[93mWARN \e[39m]\t"
-FAIL="\e[1m[ \e[91mFAIL \e[39m]\t"
-INFO="\e[1m[ \e[96mINFO \e[39m]\t"
+OK="\e[1m[  \e[92mOK  \e[39m]\e[0m\t"
+WARN="\e[1m[ \e[93mWARN \e[39m]\e[0m\t"
+FAIL="\e[1m[ \e[91mFAIL \e[39m]\e[0m\t"
+INFO="\e[1m[ \e[96mINFO \e[39m]\e[0m\t"
 ADDINF="\t\t ╚══"
 
 [[ $(id -u) -eq 0 ]] || { echo >&2 "Must be root to run this script"; exit 1; }
